@@ -1,0 +1,161 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffd700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+}
+
+.title {
+    color: #8b0000;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: title-animation 3s infinite;
+}
+
+@keyframes title-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form-group.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-control {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #8b0000;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    width: 300px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6a001a;
+    transform: scale(1.1);
+}
+
+.birthday-message {
+    font-size: 5rem;
+    color: #8b0000;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+    animation: message-animation 5s infinite;
+}
+
+@keyframes message-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.hidden {
+    display: none;
+}
+
+.hint {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #8b0000;
+    padding: 10px;
+    border: 2px solid #8b0000;
+    background-color: #fff3cd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.signature {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.user-name {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Feathers */
+.feather {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('feather.png'); 
+    background-size: cover;
+    animation: float 8s linear infinite;
+}
+
+.feather:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.feather:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.feather:nth-child(3) {
+    left: 50%;
+    animation-delay: 2s;
+}
+
+.feather:nth-child(4) {
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.feather:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(50px) rotate(360deg);
+    }
+    100% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+}

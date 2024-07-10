@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Puzzle by Vedant Kasar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Birthday Puzzle by Vedant Kasar</h1>
+        <div class="birthday-message" id="birthdayMessage">Can you solve the puzzle?</div>
+        <div class="puzzle" id="puzzle">Enter the secret word to reveal the birthday message!</div>
+        <div class="hint" id="hint">Hint: Think of someone who's special in this celebration, remember this rule -> String ans = hint.toLowerCase();</div>
+        <br />
+        
+        <div class="form-group" id="formGroup">
+            <input type="text" id="secretWord" class="form-control" placeholder="ans">
+            <button class="btn btn-primary" onclick="checkSecretWord()">daba</button>
+        </div>
+        <div class="birthday-message hidden" id="birthdayWish"></div>
+        <div class="signature hidden" id="signature">- Happy birthday wishes from Vedant Kasar</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
